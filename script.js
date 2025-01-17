@@ -2,14 +2,10 @@ const display = document.getElementById("display");
 const equalButton = document.getElementById("equal");
 
 function calculate() {
-  if (display.value === "143") {
-    display.value = "I Love You";
-  } else {
-    try {
-      display.value = eval(display.value);
-    } catch (error) {
-      display.value = "Error";
-    }
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
   }
 }
 
